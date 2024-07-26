@@ -1,0 +1,141 @@
+<!DOCTYPE html> <!-- Estou indicando que é um documento do tipo HTML-->
+<html lang="pt-BR"> <!-- Indica qual a linguagem para o browser para traduções-->
+<head> <!-- Cabeçalho -->
+    <!-- META dados são informações para o navegador -->
+    <meta charset="UTF-8"> <!-- útil para identificar todos os caracteres, indepentente do idioma-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- como será a visualização da página-->
+    <meta name="author" content="Vanessa Mendes"> <!-- visualizar o autor da página-->
+    <meta name="description" content="Minha Primeira Página WEB ---Olá Mundo!!!">
+    <meta name="keywords" content="Portfólio, Desenvolvera"><!-- Palavras chaves para ser rankiada nas pesquisas-->
+    <title>Familia 75</title> <!-- Título da página -->
+</head> 
+<body> <!-- Conteúdo a ser mostrado na página -->
+    <!-- familia do H é para definir tamanho dos títulos e sub-titulos-->
+    <h1>Primeira página da Família 75</h1>
+    <h2>Vamos começar a aprender HTML5</h2>
+    <H6>Estou utilizando tamanhos de fontes</H6>
+    <strong>Frase Destacada</strong> <!-- para dar enfase no texto-->
+
+    <h1>Listas em HTML5</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="I">
+        <li>Morango</li>
+        <li>Kiwi</li>
+        <li>Mamão
+            <ol type="i">
+                <li>Papaya</li>
+                <li>Formosa</li>
+            </ol>
+        </li> 
+    </ol><!-- OL para listas ordenadas e TYPE para o tipo -->
+    <h2>Lista não ordenadas</h2>
+    <ul type="circle">
+        <li>Banana</li>
+        <li>Maça
+            <ul type="square"> <!-- os quadradinhos, não mostra em todos os navegadores-->
+                <li>Gala</li>
+                <li>Verde</li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Lista de descrição</h2>
+    <dl>
+        <dt>Marácuja</dt>
+        <dd>É uma fruta muito azeda</dd>
+        <dt>Abacaxi</dt>
+        <dd>É uma fruta bem ácida</dd>
+</dl>
+
+<h2>Estudo para a utilização dos links</h2>
+<ul>
+    <li><a href=".\ordenada.html">Lista Ordenada</a></li>
+    <li><a href=".\naoOrdenada.html">Lista não Ordenada</a></li>
+    <li><a href=".\listaDescricao.html">Lista de Descrição</a></li>
+    <li><a href="http://google.com" targed="_blank">Para fazer pesquisa no Google</a></li>
+</ul>
+<!-- target para abrir na mesma ou em outra janela-->
+<h2>Definindo alguns termos técnicos</h2>
+<ul>
+    <li><a href="#info1">Informática</a></li>
+    <li><a href="#Computação">Ciência da Computação</a></li>
+</ul>
+
+<a name="Info1" title="Descrição de Informática">
+    <h2>Informática</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptate! Dolorum impedit laudantium animi dolores laboriosam repellendus minus corrupti iusto perspiciatis, nostrum facere ab. Dolorem, harum officia! Repudiandae, voluptatibus tenetur?
+    </p>
+    <p><a href="#">Voltar ao topo da página</a></p>
+
+    <a name="Computação" title="Ciência da Computação">
+        <h2>Ciência da Computação</h2>
+    </a>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim cumque hic in minima tempora impedit consequatur suscipit nam omnis. Illum tempore illo nemo incidunt, nihil ipsa odio sapiente exercitationem aperiam.</p>
+    <p><a href="#">Voltar ao topo da página</a></p>
+</a>
+
+<h2>Criando tabelas em HTML5</h2>
+<table border="1" cellpading="10">
+<tr>
+    <td>Primeira</td>
+    <td>Linha</td>
+</tr>
+<tr>
+    <td>Segunda</td>
+    <td>Linha</td>
+</tr>
+</table>
+
+<h2>Tabela com cabeçalho</h2>
+<table border="1">
+    <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>País</th>
+    </tr>
+    <tr>
+        <td>Bill Gates</td>
+        <td>19974345677</td>
+        <td>EUA</td>
+    <tr></tr>
+</table>
+<br>
+<table border="1">
+    <tr>
+        <th>Nome</th>
+        <td>Bill Gates</td>
+    </tr>
+    <tr>
+        <th>Telefone</th>
+        <td>19974345677</td>
+    </tr>
+    <tr>
+        <th>País</th>
+        <td>EUA</td>
+    </tr>
+</table>
+<br>
+    <h2>Trabalhando com imagens</h2>
+    <div id="imagem1">
+        <img src="./imagens/inteligencia emocional.png" alt="Inteligência emocional">
+        <img src="./imagens/inteligencia emocional 3.png" height="120" width="140" alt="Inteligencia Emocional 3">
+    </div>
+
+    <form action="mailto:alguem@exemplo.com" method="post" enctype="multipart/form-data">
+        Nome: <br>
+        <input type="text" name="nome" value="seu nome"><br>
+        Email: <br>
+        <input type="email" name="email" value="seu e-mail"><br>
+        Comentário: <br>
+        <textarea rows="4" cols="50" placeholder="seu comentário"></textarea><br>
+        Escolha o seu genero: <br>
+        <label for="masc">Masculino</label>
+        <input type="radio" name="genero" id="masc" value="Masculino"><br>
+        <label for="fem">Feminino</label>
+        <input type="radio" name="genero" id="fem" value="Feminino"><br>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
